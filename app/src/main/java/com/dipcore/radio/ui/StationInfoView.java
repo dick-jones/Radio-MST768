@@ -184,7 +184,7 @@ public class StationInfoView extends LinearLayout {
      * @param flag
      */
     public void setRDSSTFlag(boolean flag){
-        int color = getResources().getColor(flag ? R.color.text_additional_color_2 : R.color.text_additional_color_4);
+        int color = getResources().getColor((flag ? R.color.text_additional_color_2 : R.color.text_additional_color_4),null);
         st.setTextColor(color);
     }
 
@@ -193,7 +193,7 @@ public class StationInfoView extends LinearLayout {
      * @param flag
      */
     public void setRDSTPFlag(boolean flag){
-        int color = getResources().getColor(flag ? R.color.text_additional_color_2 : R.color.text_additional_color_4);
+        int color = getResources().getColor((flag ? R.color.text_additional_color_2 : R.color.text_additional_color_4),null);
         tp.setTextColor(color);
     }
 
@@ -202,7 +202,7 @@ public class StationInfoView extends LinearLayout {
      * @param flag
      */
     public void setRDSTAFlag(boolean flag){
-        int color = getResources().getColor(flag ? R.color.text_additional_color_2 : R.color.text_additional_color_4);
+        int color = getResources().getColor((flag ? R.color.text_additional_color_2 : R.color.text_additional_color_4),null);
         ta.setTextColor(color);
     }
 
@@ -215,9 +215,9 @@ public class StationInfoView extends LinearLayout {
     }
 
     private void clear(){
-        st.setTextColor(getResources().getColor(R.color.text_additional_color_4));
-        tp.setTextColor(getResources().getColor( R.color.text_additional_color_4));
-        ta.setTextColor(getResources().getColor( R.color.text_additional_color_4));
+        st.setTextColor(getResources().getColor(R.color.text_additional_color_4, null));
+        tp.setTextColor(getResources().getColor( R.color.text_additional_color_4, null));
+        ta.setTextColor(getResources().getColor( R.color.text_additional_color_4, null));
         mainText.setText("");
         ptyName.setVisibility(View.GONE);
         ptyIcon.setVisibility(View.GONE);
