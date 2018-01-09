@@ -164,7 +164,7 @@ public class RadioSharedPreferences {
     }
 
     public int getStationInfoToastBgTransparency(){
-        return sharedPreferences.getInt("pref_key_ui_station_info_toasts_transparency", 15);
+        return sharedPreferences.getInt("pref_key_ui_station_info_toasts_transparency", 50);
     }
 
     public boolean isAmBandEnabled(){
