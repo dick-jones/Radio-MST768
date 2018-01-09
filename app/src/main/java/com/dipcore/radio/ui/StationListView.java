@@ -103,7 +103,7 @@ public class StationListView extends RelativeLayout {
     public void setGridSize(final int rowNumber, int colNumber) {
 
         ShapeDrawable background = new ShapeDrawable();
-        background.getPaint().setColor(getResources().getColor(R.color.station_list_bar_bg_color));
+        background.getPaint().setColor(getResources().getColor(R.color.station_list_bar_bg_color, null));
 
 
         ShapeDrawable line = new ShapeDrawable(new Shape() {
@@ -115,7 +115,7 @@ public class StationListView extends RelativeLayout {
                 }
             }
         });
-        line.getPaint().setColor(getResources().getColor(R.color.station_list_bar_divider));
+        line.getPaint().setColor(getResources().getColor(R.color.station_list_bar_divider, null));
 
         Drawable[] layers = {background, line};
         LayerDrawable layerDrawable = new LayerDrawable(layers);
