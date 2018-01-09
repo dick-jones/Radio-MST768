@@ -67,5 +67,6 @@
     <string name="edit_station_dialog_title">Редактировать станцию</string>
 
     <string name="station_exists_message">Станция уже существует!</string>
+    <string name="Developed">Разработал dipcore</string>
 
 </resources>
