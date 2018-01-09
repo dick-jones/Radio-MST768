@@ -67,6 +67,7 @@
     <string name="add_widget">Add widget</string>
 
     <string name="station_exists_message">Station already exists!</string>
+    <string name="Developed">Developed by dipcore</string>
 
 
 </resources>
