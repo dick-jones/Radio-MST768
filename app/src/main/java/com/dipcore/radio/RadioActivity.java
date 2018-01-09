@@ -415,7 +415,8 @@ public class RadioActivity extends FragmentActivity implements StationEditDialog
             mainView.setBackgroundColor(backgroundColor);
         } else if (background.equals("$$custom")) { // Custom image
             String uri = sharedPreferences.getBackgroundImageURI();
-            mainView.setBackgroundDrawable(Drawable.createFromPath(uri));
+            //mainView.setBackgroundDrawable(Drawable.createFromPath(uri));
+            Drawable.createFromPath(uri);
         } else { // Image resource from preset
             mainView.setBackgroundResource(getResources().getIdentifier(background, "drawable", this.getPackageName()));
         }
