@@ -52,9 +52,9 @@ public class NotifyData {
         builder.setAutoCancel(false);
         builder.setContentIntent(PendingIntent.getActivity(context, 0, new Intent(context, (Class) RadioActivity.class), PendingIntent.FLAG_UPDATE_CURRENT));
 
-        if (mRadioSharedPreferences.isTopBarNotificationsEnabled()) {
+        //if (mRadioSharedPreferences.isTopBarNotificationsEnabled()) {
             builder.setSmallIcon(this.smallIcon);
-        }
+        //}
 
         Notification notification = builder.build();
         notification.flags |= NOTIFICATION_FLAGS;
