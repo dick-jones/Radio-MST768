@@ -47,6 +47,12 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
     @Override
+    protected boolean isValidFragment(String fragmentName)
+    {
+        return fragmentName.contains (SettingsActivity.class.getName());
+    }
+
+    @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
